@@ -1,0 +1,4 @@
+.vscode/
+vertices/*
+
+!vertices/.gitkeep
