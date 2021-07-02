@@ -4,8 +4,6 @@ Use this fun physics-based screensaver to bounce your friends' faces around your
 
 ## Installation
 
----
-
 ### Windows 10
 
 - Install python 3.8+ (make sure to check 'Add python to PATH' option)
@@ -31,8 +29,6 @@ Use this fun physics-based screensaver to bounce your friends' faces around your
 - `'Settings...'` and `'Preview'` will just launch the screensaver. Other than that, the rest of the settings should work.
 
 ## Customization
-
----
 
 - To change the logo:
   - Overwrite `logo.png` in `C:\pymunk-screensaver\png\` with a similarly sized `.png` image.
