@@ -11,8 +11,12 @@ import pygame
 from pyglet.window import key
 from pymunk.pyglet_util import DrawOptions
 
-ESCAPED_KEYS = [key.LALT, key.RALT]
+# Config
+ESCAPED_KEYS = [key.LALT, key.RALT, key.F9]
 RECALCULATE = True
+GRAVITY = 0
+FRICTION = 0.1
+ELASTICITY = 0.8
 
 
 def sha_256(file_path):
@@ -87,10 +91,10 @@ if window.width < smallest:
     smallest = window.width
 
 space = pymunk.Space()
-space.gravity = 0, 0
+space.gravity = 0, GRAVITY
 margin = -1
-friction = 0
-elasticity = 0.8
+friction = FRICTION
+elasticity = ELASTICITY
 spawn_margin = 200
 spawn_x_min = spawn_margin
 spawn_x_max = window.width - spawn_margin

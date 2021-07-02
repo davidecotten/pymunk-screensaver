@@ -1,4 +1,13 @@
 .vscode/
 vertices/*
+png/faces/*
 
 !vertices/.gitkeep
+!png/faces/ezio.png
+!png/faces/angry_cat.png
+!png/faces/atf.png
+!png/faces/devito.png
+!png/faces/doomguy.png
+!png/faces/lol_face.png
+!png/faces/troll_face.png
+!png/faces/waifu_bot.png

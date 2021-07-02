@@ -20,8 +20,9 @@ Use this fun physics-based screensaver to bounce your friends' faces around your
   - The `.cpp` file can be found in `.\launchers\win10` (you will need to compile it)
   - If you trust me, you can just use `.\launchers\win10\pymunk-screensaver-launcher.scr`
 - Run the launcher to make sure it can start the screensaver
-  - You will get a warning because Windows won't trust it
-  - TODO: Explain how to handle the warning message
+  - You may get a warning because Windows won't trust it:
+    - Click 'More info'
+    - Click "Run anyway'
   - If the screensaver doesn't start, double-check the above steps
 - Once you have confirmed the launcher starts copy the `.scr` file to `C:\Windows\SysWOW64`
 - Open screensaver settings (click 'Start', type `screensaver`, and press Enter)
@@ -37,5 +38,7 @@ Use this fun physics-based screensaver to bounce your friends' faces around your
 - **Backgrounds must be transparent for the edge-detection to work right**
 - If the collisions seem wrong, press `F1` while the screensaver is running to get a debug view of the collision object
 - Delete the files in `C:\pymunk-screensaver\vertices\` to recalculate edges on next run
+- To mess with the physics:
+  - At the top of `./main.py`, there are some constants defined. Feel free to modify them to see what happens.
 
 ## Enjoy!
