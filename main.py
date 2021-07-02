@@ -131,6 +131,8 @@ pygame.display.update()
 
 faces_path = os.path.join(sys.path[0], "png", "faces")
 for face_file in os.listdir(faces_path):
+    if not face_file.endswith(".png"):
+        continue
     face_path = os.path.join(faces_path, face_file)
     face_img = pyglet.image.load(face_path)
     vertices = get_vertices(face_path)
